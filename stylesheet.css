@@ -12,6 +12,7 @@
     padding: 0px;
     margin: 0px;
 }
+
 .column_HP1{
     background-color: #393939;
     width:70vw;
@@ -34,7 +35,6 @@ body{
 
 .aboutmepage{
     display: flex;
-    height: 100vh;
     width: 100vw;
     padding: 0px;
     margin: 0px;
@@ -43,7 +43,7 @@ body{
 .abtmeLeft{
     
     width: 50vw;
-    height: 100vh;
+    height: 105vh;
 }
 .abtmeRight{
     width: 50vw;
@@ -116,6 +116,7 @@ body{
 .footer{
     display: flex;
     height: fit-content;
+    margin-top: 25vh;
 }
 
 .logo1{
@@ -133,7 +134,14 @@ body{
 }
 
 
-
+@media (max-width: 1366px) {
+    .column_S1,.column_S2,.column_S3{
+        height: fit-content;
+    }
+    #buttonInquire{
+        display: none;
+    }
+}
 
 
 @media (max-width: 1000px) {
@@ -220,7 +228,6 @@ p{
 }
 
 #a{
-    margin-top: 5%;
     background-color: #2A9587;
     padding: 5px 12px 5px 12px;
     border: none;
@@ -269,7 +276,7 @@ p{
 .helper{
     display: inline-block;
     vertical-align: middle;
-    height: 100%;
+    /*height: 100%;*/
 }
 
 img{
@@ -285,6 +292,9 @@ img{
         width: 50vw;
         margin-left: auto;
         margin-right: auto;
+    }
+    #lanworks, #gratiebossen{
+        width: 50vw;
     }
 }
 .aboutmetext{
@@ -329,7 +339,7 @@ hr{
 }
 #imagewrapper{
     border: #55785E solid 5px;
-    width: 33.33vw;
+    max-width: fit-content;
     margin: auto;
     margin-top: 10vh;
 }
@@ -341,7 +351,7 @@ hr{
 }
 #imagewrapper2{
     border: #589FAF solid 5px;
-    width: 33.33vw;
+    max-width: fit-content;
     margin: auto;
     margin-top: 10vh;
 }
@@ -351,17 +361,26 @@ hr{
     margin-top: 2vh;
     color: white;
 }
-
-@media (max-width: 1000px) {
-    #imagewrapper, #imagewrapper2,#gratiebossen, #lanworks{
+/** voor horizontale ipad**/
+@media (max-width: 1024px) {
+    /* #imagewrapper, #imagewrapper2,#gratiebossen, #lanworks{
         width: 60vw;
-    }
+    } */
 
     #developing{
        margin-left: 10vw;
        margin-right: 10vw ;
        margin-top: 0;
        margin-bottom: 0;
+    }
+    .column_S1,.column_S2,.column_S3{
+        height: fit-content;
+    }
+    #buttonInquire{
+        display: none;
+    }
+    .rondKader2{
+        height: fit-content;
     }
 }
 @media(max-width: 500px){
@@ -373,19 +392,15 @@ hr{
         margin-top: 0vh;
     }
     .footer{
-       display: none;
-
+        margin-top: 100vh;
     }
     .column_S1,.column_S2,.column_S3
     {
         height: fit-content;
     }
-    #buttonInquire,#contactmebutton{
+    #buttonInquire{
         display: none;
     }
-    /* .servicesRow{
-        margin-bottom: 5vh;
-    } */
     .product2{
         margin-top: -30vh;
         height: fit-content;
@@ -396,6 +411,15 @@ hr{
     }
     #undertitle{
         font-size: 1.5rem;
+    }
+    .student{
+        font-size:1.5rem;
+    }
+    #imagewrapper,#imagewrapper2{
+        min-width: fit-content;
+    }
+    #lanworks,#gratiebossen{
+        width: 50vw;
     }
 }
 
@@ -457,7 +481,7 @@ hr{
 }
 
 #contactmebutton{
-    display: block;
+    display: flex;
     background-color: #2A9587;
     width: fit-content;
     margin: auto;
@@ -476,184 +500,30 @@ hr{
     background-color: #55785E;
 }
 
-@media(max-height:550px)
-{
-    .column_HP1{
-       height: fit-content;
-    }
-    .column_HP2{
-        height: 100vh;
-    }
-    
-    body{ 
-        height: fit-content;
-    }
-    
-    /* .aboutmepage{
-        height: fit-content;    
-    } */
-    .abtmeLeft{
-        height: fit-content;
-    }
-    .abtmeRight,.aboutmetext{
-        height: fit-content;
-        margin-top: 0vh;
-    }
-    
-    .projectspage{
-        height: fit-content;
-    }
-    
-    .titlesubtitle{
-        height: fit-content;
-    }
-    
-    .productswrapper{
-        height: fit-content;
-    }
-    .product1{
-        height: 100vh;
-    }
-    
-    .product2{
-        height: 100vh;
-    }
-    
-    .titlewrapper{
-        height: fit-content;
-    }
-    
-    .title{
-        height: fit-content;
-    }
-    
-    .servicesRow{
-        height: fit-content;
-    }
-    
-    .column_S1{
-        height: fit-content;
-        
-    }
-    .column_S2{
-        height: fit-content;
-        
-    }
-    .column_S3{
-        height: fit-content;
-    }
-    .column_HP3{
-        height: fit-content;
-    }
-    
-    .footer{
-        display: none;
-    }
-    
-    .logo1{
-        height: fit-content;
-    }
-    
-    .logo2{
-        height: fit-content;
-    }
-    .logo3{
-        height: fit-content;
-    }
-    .firstImage{
-       visibility: hidden;
-    }
-    .abtmeLeft{
-        display: none;
-    }
-    #a{
-        height: fit-content;
-    }
-    #aboutMeTitle{
-        margin-top: 4vh;
-    }
-    #aboutmepage{
-        height:110vh;
-    }
-}
-
-@media(max-height:868px){
-    .abtmeLeft{
-        display: none;
-    } 
-
-}
-@media(max-height:1000px){
-    .column_S1{
-        height: fit-content;
-        
-    }
-    .column_S2{
-        height: fit-content;
-        
-    }
-    .column_S3{
-        height: fit-content;
-    }
-    .footer{
-        display: none;
-    }
-}
-@media(max-height:768px){
+/* Voor iPad */
+@media (max-width: 768px) {
     .column_S1,.column_S2,.column_S3{
-        height: 110vh;
-    }
-    .footer{
-        display: none;
-    }
-    .abtmeLeft
-    {
-        display: none;
-    }
-    .abtmeRight{
-        width: 75vw;
-    }
-}
-@media(max-width:411px){
-    .footer{
-        display: none;
-    }
-    /* .servicesRow{
-        margin-bottom: 5vh;
-    } */
-}
-@media(max-width:320px){
-    .aboutmepage,.abtmeLeft,.abtmeRight{
-        height: 180vh;
-    }
-    .column_HP2{
-        height: 280vh;
-    }
-    .column_S1,.column_S2.column_S3{
         height: fit-content;
+    }
+    .footer{
+        display: none;
+    }
+    #contactmebutton{
+       text-align: center;
     }
     #buttonInquire{
-        display: none;
+        margin: auto;
+        margin-top: 5vh;
     }
-    .footer{
-        display: none;
+    #whitespace{
+        margin-top: 5vh;
+        min-width: 100vw;
     }
-    .column_S3{
-        margin-top: -25vh;
-    }
-    /* .servicesRow{
-        margin-bottom: 5vh;
-    } */
 }
-@media(max-width:375px)
-{
-    .abtmeRight,.aboutmepage{
-        height: auto;
+
+@media (max-height: 667px){
+    .aboutmepage,.abtmeLeft,.projectspagen,.abtmeRight{
+        /*height: max-content;*/
     }
-    .column_HP2{
-        height: 230vh;
-    }
-    .servicesRow{
-        margin
-    }
+
 }
