@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK&display=swap');
+
+
+
+.homepage{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    background-color: #393939;
+    padding: 0px;
+    margin: 0px;
+}
+
+.column_HP1{
+    background-color: #393939;
+    width:70vw;
+    height: 100vh;
+}
+.column_HP2{
+    background-color:#2A9587;
+    height: 100vh;
+    width: 30vw;
+    text-align:center;
+}
+
+body{ 
+    padding: 0px;
+    margin: 0px;
+    max-width: 100%;
+    overflow-x:hidden;
+    background-color: #4A4A4A;
+}
+
+.aboutmepage{
+    display: flex;
+    width: 100vw;
+    padding: 0px;
+    margin: 0px;
+    background-color: #4A4A4A;
+}
+.abtmeLeft{
+    
+    width: 50vw;
+    height: 105vh;
+}
+.abtmeRight{
+    width: 50vw;
+    height: 100vh;
+}
+
+.projectspage{
+    background-color:#393939;
+    display: flex;
+}
+
+.titlesubtitle{
+    height: 30vh;
+    width: 100vw;
+    /* background-color: darkgoldenrod; */
+}
+
+.productswrapper{
+    display: flex;
+    height: fit-content;
+}
+.product1{
+    height: 70vh;
+    width: 50vw;
+    background-color: #393939;
+    text-align:center;
+}
+
+.product2{
+    height: 70vh;
+    width: 50vw;
+    background-color: #393939;
+    text-align: center;
+}
+
+.titlewrapper{
+    display: flex;
+}
+
+.title{
+    margin-top: 3vh;
+    height: 10vh;
+    width: 100vw;
+}
+
+.servicesRow{
+    height: 70vh;
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    /* background-color: ; */
+}
+
+.column_S1{
+    width:33.33%;
+    
+}
+.column_S2{
+    width: 33.33%;
+    
+}
+.column_S3{
+    width: 33.33%;
+}
+.column_HP3{
+    width: 33.33%;
+    background-color: cornflowerblue;
+}
+
+.footer{
+    display: flex;
+    height: fit-content;
+    margin-top: 25vh;
+}
+
+.logo1{
+    /* background-color: burlywood; */
+    width: 33.33vw;
+}
+
+.logo2{
+    /* background-color: coral; */
+    width: 33.33vw;
+}
+.logo3{
+    /* background-color: cyan; */
+    width: 33.33vw;
+}
+
+
+@media (max-width: 1366px) {
+    .column_S1,.column_S2,.column_S3{
+        height: fit-content;
+    }
+    #buttonInquire{
+        display: none;
+    }
+}
+
+
+@media (max-width: 1000px) {
+    .aboutmepage{
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+    .abtmeLeft{
+        width: 100vw;
+        max-width: 100%;
+        height: 100vh;
+        
+    }
+    .abtmeRight{
+        width: 100vw;
+        max-width: 100%;
+        height: 100vh;
+    }
+
+    .productswrapper{
+        flex-wrap: wrap;
+    }
+    .product1, .product2{
+        width: 100vw;
+       
+    }
+    .projectspage{
+        margin-top: 100vh;
+    }
+
+    .servicesRow{
+        flex-wrap: wrap;
+        width: 100vw;
+    }
+    .column_S1, .column_S2, .column_S3{
+        width: 100vw;
+    }
+
+    .column_HP1{
+        width: 90vw;
+        border-bottom: gray solid 5px;
+    }
+    .column_HP2{
+        width: 10vw;
+        height: 200vh;
+        
+    }
+    .firstImage{
+        display: none;
+    }
+}
+
+/* NON FLEXBOX CSS */
+/* PAGE 1 */
+p{
+    font-family: 'Noto Sans';
+    color: white;
+}
+.textwrapper_pg1{
+    margin-top: 20vh;
+    margin-left: 15vw;
+}
+.hello{
+    font-size: 2em;
+    padding: 0px;
+    margin: 0px;
+    font-weight: ;
+}
+.lander{
+    font-size: 6em;
+    margin-top: 3vh;
+    margin-bottom: 0px;
+    padding: 0px;
+    color: #2A9587;
+}
+.student{
+    font-size: 2em;
+    padding: 0px;
+    margin: 0px;
+}
+
+.linkWrapper{
+    margin-top: 5vh;
+}
+
+#a{
+    background-color: #2A9587;
+    padding: 5px 12px 5px 12px;
+    border: none;
+    font-size: 1.4em;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    
+}
+
+#a:hover{
+    background-color: #2A95;
+    color: gray;
+    
+    /*border: 0.2em solid #2A9587;*/
+    
+}
+.bottom_aligner {
+    display: inline-block;
+    height: 100%;
+    vertical-align: bottom;
+    width: 0px;
+}
+
+.rondKader{
+    border: #2A9587 solid 5px;
+    height: 60vh;
+    width: 25vw;
+    margin-left: 5vw;
+    margin-top:20vh
+}
+
+.rondKader2{
+    border: grey solid 5px;
+    background-color: white;
+    height: 60vh;
+    width: 25vw;
+    position: absolute;
+    top: 110vh;
+    left: 15vw;
+    
+    text-align: center;
+    
+}
+
+.helper{
+    display: inline-block;
+    vertical-align: middle;
+    /*height: 100%;*/
+}
+
+img{
+    vertical-align: middle;
+}
+@media (max-width: 1000px) {
+    .rondKader{
+        width: 50vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .rondKader2{
+        width: 50vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #lanworks, #gratiebossen{
+        width: 50vw;
+    }
+}
+.aboutmetext{
+    font-size: 1.4em;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 5vh;
+}
+h1{
+    color: white;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 20vh;
+}
+
+hr{
+    width: 10vw;
+    margin-left: 10vw;
+    background-color: #2A9587;
+    border:none;
+    height: 3px;
+}
+.buttonMail{
+    display: block;
+    margin-left: 10vw;
+    margin-top: 10vh;
+}
+
+#MyProjects{
+    margin-top: 7vh;
+}
+
+#developing{
+    margin-left: 10vw;
+    font-size: 1.2rem;
+}
+
+#gratiebossen{
+    display: block;
+    width: 33.33vw;
+    margin: auto;
+}
+#imagewrapper{
+    border: #55785E solid 5px;
+    max-width: fit-content;
+    margin: auto;
+    margin-top: 10vh;
+}
+
+#lanworks{
+    display: block;
+    width: 33.33vw;
+    margin:auto;
+}
+#imagewrapper2{
+    border: #589FAF solid 5px;
+    max-width: fit-content;
+    margin: auto;
+    margin-top: 10vh;
+}
+#undertitle{
+    margin: auto;
+    font-size: 2rem;
+    margin-top: 2vh;
+    color: white;
+}
+/** voor horizontale ipad**/
+@media (max-width: 1024px) {
+    /* #imagewrapper, #imagewrapper2,#gratiebossen, #lanworks{
+        width: 60vw;
+    } */
+
+    #developing{
+       margin-left: 10vw;
+       margin-right: 10vw ;
+       margin-top: 0;
+       margin-bottom: 0;
+    }
+    .column_S1,.column_S2,.column_S3{
+        height: fit-content;
+    }
+    #buttonInquire{
+        display: none;
+    }
+    .rondKader2{
+        height: fit-content;
+    }
+}
+@media(max-width: 500px){
+    .abtmeLeft,.rondKader,.rondKader2,.column_HP3{
+        display: none;
+        height: 0px;
+    }
+    .projectspage{
+        margin-top: 0vh;
+    }
+    .footer{
+        margin-top: 100vh;
+    }
+    .column_S1,.column_S2,.column_S3
+    {
+        height: fit-content;
+    }
+    #buttonInquire{
+        display: none;
+    }
+    .product2{
+        margin-top: -30vh;
+        height: fit-content;
+        padding-bottom: 4vh;
+    }
+    .lander{
+        font-size: 5rem;
+    }
+    #undertitle{
+        font-size: 1.5rem;
+    }
+    .student{
+        font-size:1.5rem;
+    }
+    #imagewrapper,#imagewrapper2{
+        min-width: fit-content;
+    }
+    #lanworks,#gratiebossen{
+        width: 50vw;
+    }
+}
+
+#Services{
+    margin-top: 0vh;
+}
+#service1,#service2,#service3{
+    background-color:#393939;
+    border-radius: 40px;
+    width: 90%;
+    height: 65%;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 10vh;
+    border: #2A9587 solid 2px;
+}
+
+/*SERVICES*/
+#serviceTitle{
+    color: white;
+    text-align: center;
+    padding-top: 4vh;
+}
+#imageCircle{
+    margin-top: 3vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 5vh;
+    height: 5vh;
+    background-color: #393939;
+    border-radius: 50%;
+    text-align: center;
+}
+#codeImg{
+    width: 75%;
+    height: auto;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+#Undertitle{
+    text-align: center;
+    margin-top: 3vh;
+    margin-left: 3vw;
+    margin-right: 3vw;
+    font-size: 1.2rem;
+}
+
+.logo1,.logo2,.logo3{
+    margin-top: 15vh;
+   text-align: center;
+   border-top: #2A9587 solid 2px;
+   background-color: #393939
+   
+}
+#logo1,#logo2,#logo3{
+    width: 5%;
+    margin-bottom: 1vh;
+    margin-top: 1.5vh;
+}
+
+#contactmebutton{
+    display: flex;
+    background-color: #2A9587;
+    width: fit-content;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+#buttonInquire{
+    margin-top: 10vh;
+    /* background-color: red; */
+    text-align: center;
+}
+#contactmebutton:hover{
+    background-color: #55785E;
+}
+
+/* Voor iPad */
+@media (max-width: 768px) {
+    .column_S1,.column_S2,.column_S3{
+        height: fit-content;
+    }
+    .footer{
+        display: none;
+    }
+    #contactmebutton{
+       text-align: center;
+    }
+    #buttonInquire{
+        margin: auto;
+        margin-top: 5vh;
+    }
+    #whitespace{
+        margin-top: 5vh;
+        min-width: 100vw;
+    }
+}
+
+@media (max-height: 667px){
+    .aboutmepage,.abtmeLeft,.projectspagen,.abtmeRight{
+        /*height: max-content;*/
+    }
+
+}
